@@ -132,7 +132,7 @@ jobs:
       - slack/notify:
           # color: "#f4426e"
           mentions: "@DevOpsTeam"
-          # message: The scan failed.
+          # message: The scan failed
           event: fail 
           template: basic_fail_1 
       - slack/notify:
