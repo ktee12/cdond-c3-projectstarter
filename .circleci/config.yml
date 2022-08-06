@@ -127,8 +127,7 @@ jobs:
             npm install 
             npm audit fix --audit-level=critical --force
             npm audit fix --audit-level=critical --force
-            npm audit --audit-level=critical
-            exit 1
+            npm audit --audit-level=critical            
       - slack/notify:
           # color: "#f4426e"
           mentions: "@DevOpsTeam"
