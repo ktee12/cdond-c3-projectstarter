@@ -130,15 +130,15 @@ jobs:
             npm audit --audit-level=critical
             exit 1
       - slack/notify:
-          color: "#f4426e"
+          # color: "#f4426e"
           mentions: "@DevOpsTeam"
-          message: The scan failed.
+          # message: The scan failed.
           event: fail 
           template: basic_fail_1 
       - slack/notify:
-          color: "#42e2f4"
+          # color: "#42e2f4"
           mentions: "@DevOpsTeam"
-          message: Successful
+          # message: Successful
           event: pass
           template: success_tagged_deploy_1 
 
